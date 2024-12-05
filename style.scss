@@ -1,0 +1,268 @@
+$font-family: 'Geologica';
+$bg-colorlight-blue: #F7FDFF;
+$bg-primary-white: #fff;
+$box-shadow: 1px 1px 14px -2px rgba(0, 0, 0, 0.15);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Geologica';
+}
+
+body {
+	padding: 30px 30px;
+	position: relative;
+	min-height: 100vh;
+}
+
+@font-face {
+	font-family: Geologica;
+	src: url('./assets/font/Geologica/Geologica-VariableFont_CRSV\,SHRP\,slnt\,wght.ttf');
+}
+
+.filter-layout {
+	display: grid;
+	grid-template-columns: 254px 1fr;
+	gap: 19px;
+}
+
+.filter-layout-container {
+	background-color: $bg-primary-white;
+	box-shadow: $box-shadow;
+	border-radius: 16px;
+}
+
+	
+.filter-header {
+	background-color: $bg-colorlight-blue;
+	width: 100%;
+	height: 68px;
+	border-radius: 16px;
+	display: flex;
+	align-items: center;
+	padding-left: 25px;
+
+	.filter-header-items {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+
+		h1 {
+			font-weight: 400;
+			font-size: 16px;
+		}
+	}
+}
+
+.information-header-layout {
+	background-color: white;
+}
+.items-container-item {
+	display: flex;
+	align-items: center;
+
+	.items-information-center {
+		padding: 18px 0;
+	}
+	.items-information {
+		margin-left: 15px;
+	}
+}
+.items {
+	background-color: white;
+	box-shadow: $box-shadow;
+	padding: 20px 20px;
+	border-radius: 16px;
+	margin: 20px 0;
+}
+.items-container-item {
+	.items-img img {
+		width: 240px;
+		height: 140px;
+		border-radius: 16px;
+	}
+}
+.items-information {
+	h1 {
+		font-size: 20px;
+		font-weight: bold;
+	}
+	.items-information-center {
+		p {
+			color: #202426;
+			font-weight: 100;
+		}
+		span {
+			color: #00B8FA;
+			font-size: 14px;
+		}
+	}
+	.items-users {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+
+		span {
+			font-size: 14px;
+			font-weight: 100;
+			color: #B2B2B2;
+		}
+	}
+}
+.information-header-layout {
+	background-color: white;
+	box-shadow: $box-shadow;
+	border-radius: 16px;
+	.information-header-container {
+		display: flex;
+		align-items: center;
+
+		.information-header-title {
+			background-color: $bg-colorlight-blue;
+			width: 144px;
+			height: 68px;
+			border-radius: 16px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			h1 {
+				font-size: 16px;
+				font-weight: 400;
+			}
+		}
+	}
+}
+
+.information-header-filter {
+	.information-header-types {
+		display: flex;
+		align-items: center;
+	}
+
+	label {
+		font-size: 14px;
+		font-weight: 100;
+		color: #202426;
+	}
+	.by-date {
+		margin: 0 30px;
+	}
+}
+
+.search-items {
+	margin: 20px 25px;
+
+	h1 {
+		font-size: 14px;
+		font-weight: 400;
+	}
+}
+.search-item {
+	position: relative;
+	input {
+		position: relative;
+		width: 214px;
+		height: 44px;
+		border-radius: 20px;
+		border: none;
+		background-color: #F8F8F8;
+		padding-left: 25px;
+		margin-top: 16px;
+	}
+	input::placeholder {
+		font-size: 16px;
+		font-weight: 100;
+	}
+	input:focus{
+		outline: none;
+	}
+	i {
+		position: absolute;
+		right: 5px;
+		bottom: 12px;
+		font-size: 19px;
+		color: #202426;
+		font-weight: 100;
+	}
+}
+
+.filter-types-container {
+	margin: 30px 25px;
+
+	.sort-buttons {
+		button {
+			background-color: #F8F8F8;
+			border: none;
+			padding: 5px 15px;
+			margin: 10px 10px;
+			border-radius: 50px;
+			font-weight: 100;
+		}
+		button.active {
+			background: #00B8FA;
+			color: #fff;
+		}
+	}
+}
+.changes-numbers-layout {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	
+	.arrow {
+		font-size: 15px;
+		color: #333;
+	 }
+
+   .page-number.active {
+	background-color: white;
+	color: #00B8FA;
+	border: 1px solid #00B8FA;
+	padding: 5px 10px;
+	border-radius: 50px;
+   }
+ }
+ 
+ .pages-scroll-container {
+	position: absolute;
+	bottom: 20px;
+ }
+
+ .pages-scroll-layout {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+ }
+ .scroll-pages {
+	span {
+		margin: 0 15px;
+		font-size: 14px;
+		font-weight: 100;
+	}
+ }
+ .pages-scroll-container {
+	display: flex;
+	align-items: center;
+ }
+ .drop-down-layout {
+	margin-left: 20px;
+	
+	.drop-down-container {
+		position: relative;
+		button {
+			position: relative;
+			padding: 5px 30px;
+			background-color: white;
+			border: 1px solid gray;
+			border-radius: 20px;
+			font-weight: 100;
+		}
+		i {
+			position: absolute;
+			right: 2px;
+			top: 2px;
+		}
+	}
+ }

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+	<section class="main-page-layout">		
+		<div class="container">
+			<div class="filter-layout">
+				<div class="filter-layout-container">
+					<div class="filter-header">
+						<div class="filter-header-items">
+							<img src="./assets/icons/filter.png" alt="">
+							<h1>Фильтр</h1>
+						</div>
+					</div>
+					<div class="search-items">
+						<div class="search-container">
+							<h1>Поиск по названию</h1>
+							<div class="search-item">
+								<input placeholder="Введите название" type="text">
+								<i class="material-icons">search</i>
+							</div>
+						</div>
+					</div>
+					<div class="filter-types-layout">
+						<div class="filter-types-container">
+							<div id="sort-buttons" class="sort-buttons">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="information-layout">
+					<div class="information-layout-container">
+						<div class="information-header-layout">
+							<div class="information-header-container">
+								<div class="information-header-title">
+									<h1>Сортировка</h1>
+								</div>
+								<div class="information-header-filter">
+									<div class="information-header-types">
+										<div class="by-date">
+											<input id="option1" type="radio">
+											<label for="option1">по дате выхода</label>
+										</div>
+										<div class="by-famous">
+											<input id="option2" type="radio">
+											<label for="option2">по популярности</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="information-items-layout">
+							<div class="information-items-container">
+								<div class="items item-1">
+									<div class="items-container">
+										<div class="items-container-item">
+											<div class="items-img">
+												<img src="https://s3-alpha-sig.figma.com/img/7ab3/072a/68f1af1292cc8312755f3f9440dd7b71?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=emXlweSJiEDpdWNWlOW1BlJikeJ0Me-8lthLnLz9OgCXrZOysNx2yG-RoMc9uHe5tNEa3btqjNi8V2qXWrv~awwDVqvovD6SLOSUPryvlycFW6lmunCqOqjKrtGuGnlV-abSt54Gi2ku~zjb080kL1j2dUDA9FGdnomvkottVH5xoyOPZXuVCJZxcLJEXm5apdecnye6VzMxOka6adl4GemfkAt7j~pe~tglhLkMShzYY6aqlOedIUoLwHgtQ4Z0oNxtps0RFGRBtM7309-t1l4W1bQOe7Wt7sk7qjDLRDiSi6zb2DvxKnJ0NuCB8~R0Z3WtWkDuAnQamtiQcCsQAA__" alt="">
+											</div>
+											<div class="items-information">
+												<h1>Кольсай</h1>
+												<div class="items-information-center">
+													<p>Походы — это не просто активный отдых, это настоящее путешествие к себе и природе. В современном ритме жизни, полном экранов, дедлайнов и суеты, поход становится глотком свежего воздуха — буквально и в переносном смысле.</p>
+													<span>подробнее...</span>
+												</div>
+												<div class="items-users">
+													<span>Аскар Таханов</span>
+													<span>10.11.2024</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="pages-scroll-layout">
+		<div class="pages-scroll-container">
+			<div class="changes-numbers-layout">
+				<i class="material-icons arrow">arrow_back_ios</i>
+				<div class="scroll-pages">
+				  <span class="page-number active">1</span>
+				  <span class="page-number">2</span>
+				  <span class="page-number">3</span>
+				  <span class="page-number">4</span>
+				  <span class="page-number">5</span>
+				  <span class="page-number">...</span>
+				  <span class="page-number">50</span>
+				</div>
+				<i class="material-icons arrow">arrow_forward_ios</i>
+			 </div>
+			 <div class="drop-down-layout">
+				<div class="drop-down-container">
+					<button>1 / 50</button>
+					<i class="material-icons">keyboard_arrow_down</i>
+				</div>
+			 </div>
+		</div>
+	</section>
+
+
+
+	<script>
+  const sortOptions = [
+      { id: 1, label: "советы", type: "name", active: true },
+      { id: 2, label: "походы", type: "date", active: false },
+      { id: 3, label: "гайды", type: "price", active: true },
+      { id: 4, label: "походы", type: "rating", active: false },
+      { id: 5, label: "походы", type: "popularity", active: false },
+      { id: 6, label: "походы", type: "category", active: true },
+      { id: 7, label: "походы", type: "size", active: false },
+      { id: 8, label: "гайды", type: "color", active: false },
+      { id: 9, label: "гайды", type: "brand", active: true },
+      { id: 10, label: "гайды", type: "availability", active: false },
+      { id: 11, label: "походы", type: "reviews", active: false },
+      { id: 12, label: "гайды", type: "discount", active: false },
+      { id: 13, label: "гайды", type: "discount", active: true },
+      { id: 14, label: "гайды", type: "discount", active: false },
+      { id: 15, label: "походы", type: "discount", active: false },
+      { id: 16, label: "походы", type: "discount", active: false },
+      { id: 17, label: "советы", type: "discount", active: true }
+    ];
+	 const container = document.getElementById("sort-buttons");
+
+	 sortOptions.forEach(option => {
+		const button = document.createElement("button")
+		button.textContent = option.label;
+      container.appendChild(button);
+		if (option.active) {
+        button.classList.add("active");
+      }
+	 })
+	</script>
+</body>
+</html>

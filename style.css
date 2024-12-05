@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Geologica";
+}
+
+body {
+  padding: 30px 30px;
+  position: relative;
+  min-height: 100vh;
+}
+
+@font-face {
+  font-family: Geologica;
+  src: url("./assets/font/Geologica/Geologica-VariableFont_CRSV,SHRP,slnt,wght.ttf");
+}
+.filter-layout {
+  display: grid;
+  grid-template-columns: 254px 1fr;
+  gap: 19px;
+}
+
+.filter-layout-container {
+  background-color: #fff;
+  box-shadow: 1px 1px 14px -2px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+}
+
+.filter-header {
+  background-color: #F7FDFF;
+  width: 100%;
+  height: 68px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+}
+.filter-header .filter-header-items {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.filter-header .filter-header-items h1 {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.information-header-layout {
+  background-color: white;
+}
+
+.items-container-item {
+  display: flex;
+  align-items: center;
+}
+.items-container-item .items-information-center {
+  padding: 18px 0;
+}
+.items-container-item .items-information {
+  margin-left: 15px;
+}
+
+.items {
+  background-color: white;
+  box-shadow: 1px 1px 14px -2px rgba(0, 0, 0, 0.15);
+  padding: 20px 20px;
+  border-radius: 16px;
+  margin: 20px 0;
+}
+
+.items-container-item .items-img img {
+  width: 240px;
+  height: 140px;
+  border-radius: 16px;
+}
+
+.items-information h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.items-information .items-information-center p {
+  color: #202426;
+  font-weight: 100;
+}
+.items-information .items-information-center span {
+  color: #00B8FA;
+  font-size: 14px;
+}
+.items-information .items-users {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.items-information .items-users span {
+  font-size: 14px;
+  font-weight: 100;
+  color: #B2B2B2;
+}
+
+.information-header-layout {
+  background-color: white;
+  box-shadow: 1px 1px 14px -2px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+}
+.information-header-layout .information-header-container {
+  display: flex;
+  align-items: center;
+}
+.information-header-layout .information-header-container .information-header-title {
+  background-color: #F7FDFF;
+  width: 144px;
+  height: 68px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.information-header-layout .information-header-container .information-header-title h1 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.information-header-filter .information-header-types {
+  display: flex;
+  align-items: center;
+}
+.information-header-filter label {
+  font-size: 14px;
+  font-weight: 100;
+  color: #202426;
+}
+.information-header-filter .by-date {
+  margin: 0 30px;
+}
+
+.search-items {
+  margin: 20px 25px;
+}
+.search-items h1 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.search-item {
+  position: relative;
+}
+.search-item input {
+  position: relative;
+  width: 214px;
+  height: 44px;
+  border-radius: 20px;
+  border: none;
+  background-color: #F8F8F8;
+  padding-left: 25px;
+  margin-top: 16px;
+}
+.search-item input::placeholder {
+  font-size: 16px;
+  font-weight: 100;
+}
+.search-item input:focus {
+  outline: none;
+}
+.search-item i {
+  position: absolute;
+  right: 5px;
+  bottom: 12px;
+  font-size: 19px;
+  color: #202426;
+  font-weight: 100;
+}
+
+.filter-types-container {
+  margin: 30px 25px;
+}
+.filter-types-container .sort-buttons button {
+  background-color: #F8F8F8;
+  border: none;
+  padding: 5px 15px;
+  margin: 10px 10px;
+  border-radius: 50px;
+  font-weight: 100;
+}
+.filter-types-container .sort-buttons button.active {
+  background: #00B8FA;
+  color: #fff;
+}
+
+.changes-numbers-layout {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.changes-numbers-layout .arrow {
+  font-size: 15px;
+  color: #333;
+}
+.changes-numbers-layout .page-number.active {
+  background-color: white;
+  color: #00B8FA;
+  border: 1px solid #00B8FA;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+.pages-scroll-container {
+  position: absolute;
+  bottom: 20px;
+}
+
+.pages-scroll-layout {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.scroll-pages span {
+  margin: 0 15px;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.pages-scroll-container {
+  display: flex;
+  align-items: center;
+}
+
+.drop-down-layout {
+  margin-left: 20px;
+}
+.drop-down-layout .drop-down-container {
+  position: relative;
+}
+.drop-down-layout .drop-down-container button {
+  position: relative;
+  padding: 5px 30px;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 20px;
+  font-weight: 100;
+}
+.drop-down-layout .drop-down-container i {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+}
+
+/*# sourceMappingURL=style.css.map */
